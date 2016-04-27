@@ -10,6 +10,7 @@
   @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
   @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
   @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+   
 
   body {
     background: #fff;
@@ -74,17 +75,21 @@ table {
 
 }
 
-th, td {
-  width: 33%;
+td {
+  width: 10%;
+
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even){background-color: #f2f2f2}
 
-th {
+th {width: 10%;
+  
+    text-align: left;
+    padding: 8px;
 
-    background-color: #262727;
+    background-color: #900C3F;
     color: white;
 }
 
@@ -342,6 +347,8 @@ th {
 ul.sub-menu {
   display: none;
   list-style: none;
+
+
   padding: 0;
   margin: 0;
 }
@@ -351,12 +358,13 @@ ul.sub-menu {
   padding: 5px 0;
   font-size: 13px;
   display: block;
+  
   text-transform: capitalize;
 }
 
 #header .navbar-nav li ul.sub-menu li .active{
   background: #00aeef;
-  color: #fff;
+  color: #fff;width: 5px;
   position: relative;
 }
 
@@ -365,6 +373,7 @@ ul.sub-menu {
   font-size: 56px;
   top: -13px;
   color: #0884d5;
+
 }
 
 #header .navbar-nav li ul.sub-menu li .active .fa-angle-right{
@@ -383,6 +392,7 @@ ul.sub-menu {
 
 .fa-angle-down{
   padding-left: 5px; 
+   width: 5px;
 }
 
 .scaleIn {
@@ -436,6 +446,17 @@ ul.sub-menu {
 }
 
 
+
+/* round Image*/
+#roundImage{
+display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 
 /*************************
 *******Footer******
